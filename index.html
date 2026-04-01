@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education Website | SDG 4</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Education Platform</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#resources">Resources</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#videos">Videos</a>
+        <a href="#forum">Forum</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="section">
+      <h2>Welcome to Quality Education</h2>
+      <p>This platform is built to support SDG 4 by delivering study materials, interactive quizzes, video lessons, and discussion forums.</p>
+    </section>
+
+    <section id="resources" class="section">
+      <h2>Study Resources</h2>
+      <ul>
+        <li><a href="#">Mathematics (Algebra, Geometry, Statistics)</a></li>
+        <li><a href="#">Science (Biology, Physics, Chemistry)</a></li>
+        <li><a href="#">Language Arts (Grammar, Writing, Reading)</a></li>
+      </ul>
+    </section>
+
+    <section id="quiz" class="section">
+      <h2>Quick Quiz</h2>
+      <div class="quiz-card">
+        <p id="question">1. What is the capital of France?</p>
+        <div class="options">
+          <button data-answer="wrong">Berlin</button>
+          <button data-answer="wrong">Madrid</button>
+          <button data-answer="correct">Paris</button>
+          <button data-answer="wrong">Rome</button>
+        </div>
+        <p id="feedback"></p>
+        <button id="next-btn" class="small-button">Next</button>
+      </div>
+    </section>
+
+    <section id="videos" class="section">
+      <h2>Video Lessons</h2>
+      <div class="video-grid">
+        <div class="video">
+          <h3>Intro to Algebra</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/4dsaXG_UP0w" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+          <h3>Science Basics</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/5QdMfD33jKY" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="forum" class="section">
+      <h2>Discussion</h2>
+      <p>Ask questions, share ideas, and support peers. Posts are stored locally in your browser.</p>
+      <div class="forum-card">
+        <form id="forum-form">
+          <input type="text" id="username" placeholder="Your name" required />
+          <textarea id="message" rows="3" placeholder="Write a post..." required></textarea>
+          <button type="submit" class="small-button">Post</button>
+        </form>
+        <ul id="posts" class="posts"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Education Website | SDG 4 - Quality Education</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
