@@ -1,0 +1,143 @@
+:root {
+  --bg: #f9fafb;
+  --text: #111827;
+  --primary: #1d4ed8;
+  --card: #ffffff;
+  --border: #d1d5db;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  width: min(1200px, 96%);
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.site-header {
+  background: #1e3a8a;
+  color: white;
+  padding: 0.8rem 0;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.site-header nav a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+.quiz-card {
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background: #fff;
+}
+
+.forum-card {
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+}
+
+#forum-form {
+  display: grid;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+#forum-form input,
+#forum-form textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 0.35rem;
+  padding: 0.7rem;
+}
+
+.posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.posts li {
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  padding: 0.7rem;
+  margin-bottom: 0.6rem;
+  background: #f8fafc;
+}
+
+.posts li > strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.options button,
+.small-button {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid var(--primary);
+  border-radius: 0.35rem;
+  padding: 0.55rem 0.9rem;
+  background: white;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.options button:hover,
+.small-button:hover {
+  background: var(--primary);
+  color: white;
+}
+
+#feedback {
+  margin-top: 0.7rem;
+  font-weight: bold;
+}
+
+.video-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #f1f5f9;
+  border-top: 1px solid var(--border);
+}
